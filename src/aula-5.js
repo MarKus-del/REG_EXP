@@ -2,10 +2,11 @@ const { alfabeto } = require('./base');
 
 // [abc] = conjunto
 // + = sequencia de um conjunto
-// ^  = nega um conjunto
+// [^]  = nega um conjunto
 // [-] = range
 console.log(alfabeto);
-console.log(alfabeto.match(/[^abc123]+/gi));
+
+console.log(alfabeto.match(/[^abc123]+/gi)); // negação
 
 // console.log(alfabeto.match(/[0-9]+/g));
 // equivale a
